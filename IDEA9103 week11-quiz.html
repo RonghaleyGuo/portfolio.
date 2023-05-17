@@ -1,0 +1,70 @@
+<!-- https://github.com/RonghaleyGuo/portfolio..git -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout demo</title>
+
+    <style>
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 0.9fr 1.8fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". grid-header grid-nav"
+    ". grid-text ."
+    ". grid-svg grid-controls";
+}
+
+.grid-header { grid-area: grid-header; }
+
+.grid-nav { grid-area: grid-nav; }
+
+.grid-text { grid-area: grid-text; }
+
+.grid-svg { grid-area: grid-svg; }
+
+.grid-controls { grid-area: grid-controls; }
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class = "container">
+            <div class="grid-header">
+                <h1> LOULOU </h1>
+            </div>
+             <div class="grid-nav">
+            <a href="/IDEA9103 WEEK 11 TUT .html">MEOW!</a>
+                </div>
+                <div class="grid-text">
+                    <p>
+                        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                    </p>
+                </div>
+               
+                <div class="grid-svg" viewBox="0 100 200 200">
+                 <img src="https://placekitten.com/300/300" alt="staff-bio-thumbnail">
+            <svg width="200" height="200">
+                <!-- <line x1="200" y1="0" x2="0" y2="200" stroke="pink"></line> -->
+                <line x1="200" y1="0" x2="0" y2="200" stroke="pink"></line>
+            </svg>
+        </div>
+        <div class="grid-controls">
+            <input type="button" value="meocha!">
+        </div>
+           
+            
+          </div>
+
+
+</body>
+</html>
